@@ -165,7 +165,7 @@
 								</header>
 								<section id="contact">
 									<!-- <span >Send me a message - <strong><a  href="mailto:nikolaisumcad@gmail.com">nikolaisumcad@gmail.com</a></strong>. I am currently acccepting new freelance clients, local restaurant tips, and indie video game suggestions.</span> -->
-									<form name="contact" method="POST" data-netlify="true">
+									<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
 										<input type="hidden" name="form-name" value="contact">
 										
 										<div class="row gtr-uniform">
@@ -173,10 +173,10 @@
 											<input type="text" name="name" placeholder="Name">
 										  </div>
 										  <div class="col-6 col-12-xsmall">
-											<input type="email" name="demail" placeholder="Email">
+											<input type="email" name="email" placeholder="Email">
 										  </div>
 										  <div class="col-12">
-											<textarea name="message" placeholder="Enter your message" rows="6"></textarea>
+											<textarea name="message" placeholder="Enter your message" rows="6" required></textarea>
 										  </div>
 										  <div class="col-12">
 											<div data-netlify-recaptcha="true"></div>
