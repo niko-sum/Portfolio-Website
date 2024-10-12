@@ -75,6 +75,17 @@ body {
   html, body {
     min-width: 320px; } }
 
+@media screen and (max-width: 480px) {
+  body {
+    text-align: center;
+  }
+  .article, article ul, .col-12 ul{
+    /* display: flex; */
+    justify-content: center; /* Horizontal centering */
+    align-items: center;     /* Vertical centering */
+    flex-direction: column;  /* Stack items vertically if needed */
+  }}
+
 html {
   box-sizing: border-box; }
 
@@ -1725,7 +1736,7 @@ button,
       -moz-align-items: -moz-flex-start;
       -webkit-align-items: -webkit-flex-start;
       -ms-align-items: -ms-flex-start;
-      align-items: flex-start; }
+      align-items: center; }
       .features article .icon {
         height: 6em;
         line-height: 6em;
