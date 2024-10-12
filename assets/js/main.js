@@ -157,11 +157,7 @@
 					// >large? Bail.
 						if (breakpoints.active('>large'))
 							return;
-
-					// Check if the click target is not the form or a child of the form
-    					if ($(event.target).closest('form').length > 0) {
-        					return; // If click/tap is inside the form, don't hide the sidebar
-    					}
+						
 
 					// Deactivate.
 						$sidebar.addClass('inactive');
